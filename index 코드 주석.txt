@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- 문서의 언어는 한국어 -->
+  
+  <head>
+    <meta charset="UTF-8" /> <!-- 한글 깨짐 방지를 위한 UTF-8 인코딩 설정 -->
+    <title>AUTOPACK 분석</title> <!-- 브라우저 탭에 표시될 제목 -->
+    <link rel="stylesheet" href="style.css" /> <!-- 외부 CSS 파일 연결 -->
+  </head>
+
+  <body>
+    <h1>AUTOPACK 분석기</h1> <!-- 제목 -->
+    <!-- 비디오 요소: 카메라에서 실시간으로 받아온 영상을 표시 -->
+    <video id="video" autoplay></video>
+
+    <!-- 버튼을 누르면 분석 시작 -->
+    <button onclick="startAnalysis()">시작</button>
+
+    <!-- 분석 상태를 표시하는 영역 -->
+    <p id="status">시작 버튼을 눌러 분석을 시작하세요</p>
+
+    <!-- 분석 결과가 표시될 부분 -->
+    <p id="result"></p>
+
+    <!-- 자바스크립트 파일 연결 -->
+    <script src="script.js"></script>
+  </body>
+
+</html>
